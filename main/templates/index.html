@@ -1,0 +1,388 @@
+{% load static %}
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;  charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="date=no" />
+  <meta name="format-detection" content="address=no" />
+  <meta name="format-detection" content="email=no" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}" />
+  <title>Responsive E-mail Template</title>
+  <style type="text/css">
+    #outlook a {
+      padding: 0;
+    }
+
+    .ReadMsgBody,
+    .ExternalClass {
+      width: 100%;
+    }
+
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    body,
+    table,
+    td,
+    span,
+    a {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    table,
+    td {
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+
+    html,
+    body,
+    #wrappertable {
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      line-height: 100% !important;
+    }
+
+    img {
+      display: block;
+      border: none;
+      height: auto;
+      outline: none !important;
+      line-height: 100% !important;
+      text-decoration: none !important;
+    }
+
+    table {
+      border-spacing: 0 !important;
+      border-collapse: collapse !important;
+    }
+
+    table td {
+      border-collapse: collapse !important;
+    }
+
+    a,
+    a:link,
+    a:visited,
+    a:focus,
+    a:hover {
+      color: inherit !important;
+      outline: none !important;
+      text-decoration: none !important;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio:0) {}
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+
+    @media screen and (max-device-width: 480px),
+    screen and (max-width: 480px) {}
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {}
+
+    @media (-webkit-min-device-pixel-ratio: 1.5),
+    (min-resolution: 144dpi) {}
+  </style>
+  <!--[if IEMobile 7]>
+		<style type="text/css">
+			
+		</style>
+	<![endif]-->
+  <!--[if gte mso 9]>
+		<style type="text/css">
+			
+		</style>
+	<![endif]-->
+  <!--[if gte mso 9]>
+		<xml>
+			<o:OfficeDocumentSettings>
+				<o:AllowPNG/>
+				<o:PixelsPerInch>96</o:PixelsPerInch>
+			</o:OfficeDocumentSettings>
+		</xml>
+	<![endif]-->
+  <style type="text/css">
+    @media only screen and (max-width: 599px) {
+      div[class="block"] {
+        width: 100% !important;
+        max-width: none !important;
+      }
+
+      table[class="full-width"] {
+        width: 100% !important;
+      }
+
+      table[class="center"],
+      td[class="center"] {
+        text-align: center !important;
+        float: none !important;
+      }
+
+      table[class="remove"] {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 413px) {
+      div[class="block"] {
+        width: 100% !important;
+        max-width: none !important;
+      }
+    }
+
+    @media only screen and (max-width: 374px) {
+      div[class="block"] {
+        width: 100% !important;
+        max-width: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body id="body-layout">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" id="wrappertable" style="table-layout: fixed;">
+    <tr>
+      <td align="center" valign="bottom">
+        <table cellpadding="0" cellspacing="0" border="0" style="background: #ffffff;">
+          <tr>
+            <td width="600" align="center" valign="top">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: #19abff;">
+                <tr>
+                  <td align="center" valign="top">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td align="center" valign="top" style="padding: 0 45px;">
+                          <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td width="510" align="center" valign="top">
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td style="padding-top: 63px; line-height: 0px;"></td>
+                                  </tr>
+                                </table>
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td width="41%" align="left" valign="top">
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td align="left" valign="top"
+                                            style="color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 14px; mso-line-height-rule: exactly; line-height: 38px; font-weight: 700; text-transform: uppercase;">
+                                            Личностный тест Майерс-Бриггс</td>
+                                        </tr>
+                                      </table>
+                                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td style="padding-top: 31px; line-height: 0px;"></td>
+                                        </tr>
+                                      </table>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="79" align="center" valign="top"
+                                            style="padding-top: 4px; line-height: 0px;background: #2c3336;"></td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                    <td width="59%" align="left" valign="top"
+                                      style="color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 17px; mso-line-height-rule: exactly; line-height: 26px; font-weight: 400;padding: 0 30px 0 0 ">
+                                      Myers-Briggs, MBTI представляет собой оценку характеристик личности,
+                                      основанную на оценке предпочтений человека в четырех сферах.</td>
+                                  </tr>
+                                </table>
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td style="padding-top: 64px; line-height: 0px;"></td>
+                                  </tr>
+                                </table>
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td style="padding-top: 63px; line-height: 0px;"></td>
+                                  </tr>
+                                </table>
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td width="41%" align="left" valign="top">
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td width="59%" align="left" valign="top"
+                                            style="color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 17px; mso-line-height-rule: exactly; line-height: 26px; font-weight: 400;padding: 0 30px 0 0 ">
+                                            Инструкция к тесту: Этот вопросник предназначен для определения типичных
+                                            способов поведения и личностных характеристик. Он состоит из 70 утверждений
+                                            (вопросов),
+                                            каждое из которых имеет два варианта ответа. Вам необходимо выбрать ОДИН.
+                                            Все ответы равноценны,
+                                            среди них нет "правильных" или "неправильных"! Поэтому не нужно "угадывать"
+                                            ответ.
+                                            Выберите ответ, который свойствен вашему поведению в большинстве жизненных
+                                            ситуаций.
+                                            Работайте последовательно, не пропуская вопросов. Отвечайте правдиво, если
+                                            вы хотите узнать что-то
+                                            о себе, а не о какой-то мифической личности.</td>
+                                        </tr>
+                                      </table>
+                                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                          <td style="padding-top: 31px; line-height: 0px;"></td>
+                                        </tr>
+                                      </table>
+                                      <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                        </tr>
+                                      </table>
+                                    </td>
+
+                                  </tr>
+                                </table>
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                  <tr>
+                                    <td style="padding-top: 64px; line-height: 0px;"></td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: #313131;">
+                <tr>
+                  <td align="center" valign="top">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td align="center" valign="top" style="padding: 0 45px;">
+                          <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td width="510" align="center" valign="top">
+                                <form id="form-1" method="post" action="{% url 'result-handler' %}">
+                                  <br><label style="color: #ffcc41; font-size: 20px;">Ваше имя</label>
+                                  <hr>
+                                  <div class="input-group mb-3">
+                                    <input class="form-control" name="name" type="text" placeholder="Имя" required>
+                                  </div>
+                                  <br><label style="color: #ffcc41; font-size: 20px;">Телефон без "+"</label>
+                                  <hr>
+                                  <div class="input-group mb-3">
+                                    <input class="form-control" name="phone" type="text" placeholder="79990001122" required>
+                                  </div>
+                                  <br><label style="color: #ffcc41; font-size: 20px;">Ваша почта</label>
+                                  <hr>
+                                  <div class="input-group mb-3">
+                                    <input class="form-control" name="email" type="email" placeholder="Email" required>
+                                  </div>
+                                  <br><label style="color: #ffcc41; font-size: 20px;">
+                                    Начнём? Ответьте на 70 вопросов,<br>
+                                    обычно это занимает 3-5 минут.
+                                  </label>
+                                  <hr>
+                                  {% csrf_token %}
+                                  {% for answer in answers %}
+
+                                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                      <td style="padding-top: 63px; line-height: 0px;"></td>
+                                    </tr>
+                                  </table>
+                                  <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                      <td width="198" align="left" valign="top">
+                                        <table cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                            <td align="center" valign="top" style="line-height: 0px !important;">
+                                              <!-- <img src="/media/{{answer.number_image}}" alt="" width="100%"
+                                              style="width: 100%; max-width: 100%;" /> -->
+                                              <h1 style="font-size: 150px; color: blue">{{answer.pk}}</h1>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                      <td width="59%%" align="left" valign="top">
+                                        <table cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                            <td align="left" valign="top"
+                                              style="color: #ffcc41; font-family: Arial, Helvetica, sans-serif; font-size: 25 px; mso-line-height-rule: exactly; line-height: 28px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px;">
+                                              {{answer.name}}</td>
+                                          </tr>
+                                        </table>
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                            <td style="padding-top: 19px; line-height: 0px;"></td>
+                                          </tr>
+                                        </table>
+                                        <table cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                            <td align="left" valign="top"
+                                              style="color: #ffcc41; font-family: Arial, Helvetica, sans-serif; font-size: 17px; mso-line-height-rule: exactly; line-height: 26px; font-weight: 400;">
+                                              <div class="form-check">
+                                                <input class="form-check-input" name="group-{{answer.pk}}"
+                                                  id="radioButton1-{{answer.pk}}" type="radio" value="a" required>
+                                                <label class="form-check-label"
+                                                  for="radioButton1-{{answer.pk}}">{{answer.option1}}</label><br>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" name="group-{{answer.pk}}"
+                                                  id="radioButton2-{{answer.pk}}" type="radio" value="b" required>
+                                                <label class="form-check-label"
+                                                  for="radioButton2-{{answer.pk}}">{{answer.option2}} </label>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                      <td style="padding-top: 128px; line-height: 0px;"></td>
+                                    </tr>
+                                  </table>
+                                  {% endfor %}
+                                  <button type="submit" class="btn btn-primary btn-lg">Завершить</button>
+                                </form>
+                                <br>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
